@@ -62,7 +62,7 @@ private  boolean pocetnaPripada,krajnjaPripada;
             if(v>pocetna&&v<krajnja)return true;
             else return  false;
         }
-         return  false:
+         return  false;
     }
 
     public boolean isNull() {
@@ -70,6 +70,31 @@ private  boolean pocetnaPripada,krajnjaPripada;
         return false;
     }
 
-    public Interval intersect(Interval interval) {
+    public Interval intersect(Interval i2) {
+        double poc=0;
+        double krj=0;
+        boolean pocprip=false;
+        boolean krjprip=false;
+        if(this.pocetna<i2.pocetna){
+            poc=i2.pocetna;
+            pocprip=i2.pocetnaPripada;
+
+        }else
+        {
+            poc=this.pocetna;
+            pocprip=this.pocetnaPripada;
+        }
+        if(this.krajnja<i2.krajnja){
+            poc=this.krajnja;
+            pocprip=this.krajnjaPripada;
+
+        }else
+        {
+            poc=i2.pocetna;
+            pocprip=i2.krajnjaPripada;
+        }
+        Interval rjesenje =new Interval(poc,krj,pocprip,krjprip);
+        return rjesenje;
+
     }
 }
