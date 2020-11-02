@@ -5,8 +5,9 @@ private double pocetna,krajnja;
 private  boolean pocetnaPripada,krajnjaPripada;
 
     public Interval(double pocetna, double kraj, boolean pocetnaPripada, boolean krajnjaPripada) {
+        if(pocetna>kraj) throw new IllegalArgumentException("Pogresan unos");
         this.pocetna=pocetna;
-        this.krajnja=krajnja;
+        this.krajnja=kraj;
         this.pocetnaPripada=pocetnaPripada;
         this.krajnjaPripada=krajnjaPripada;
     }
@@ -43,7 +44,6 @@ private  boolean pocetnaPripada,krajnjaPripada;
         return rjesenje;
 
     }
-
 
     public boolean isIn(double v) {
         if(pocetnaPripada==true&&krajnjaPripada==true){
@@ -96,5 +96,18 @@ private  boolean pocetnaPripada,krajnjaPripada;
         Interval rjesenje =new Interval(poc,krj,pocprip,krjprip);
         return rjesenje;
 
+    }
+
+    @Override
+    public String toString() {
+        if(pocetnaPripada==true && krajnjaPripada==true)
+        return "[" +pocetna+","+krajnja+"]";
+        if(pocetnaPripada==false && krajnjaPripada==false)
+            return "(" +pocetna+","+krajnja+")";
+        if(pocetnaPripada==true && krajnjaPripada==false)
+            return "[" +pocetna+","+krajnja+")";
+        if(pocetnaPripada==false && krajnjaPripada==true)
+            return "([)" +pocetna+","+krajnja+"]";
+        return null;
     }
 }
