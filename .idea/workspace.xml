@@ -19,8 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6416208e-ff63-435f-bea9-5e4ccc75ec4a" name="Default Changelist" comment="Prepravljena metoda tostring, prolaze jos 3 testa.">
+    <list default="true" id="6416208e-ff63-435f-bea9-5e4ccc75ec4a" name="Default Changelist" comment="ispravka metode tostring za slucaj kada su pocetna i krajnja 0 0">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/rpr-t2-z2/ba/unsa/etf/rpr/tutorijal02/Interval.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rpr-t2-z2/ba/unsa/etf/rpr/tutorijal02/Interval.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/rpr-t2-z2/ba/unsa/etf/rpr/tutorijal02/IntervalTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/rpr-t2-z2/ba/unsa/etf/rpr/tutorijal02/IntervalTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ba/unsa/etf/rpr/tutorijal02/Interval.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ba/unsa/etf/rpr/tutorijal02/Interval.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +50,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager" selected="JUnit.IntervalTest.toString2">
+  <component name="RunManager" selected="JUnit.IntervalTest">
     <configuration name="IntervalTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rpr-t2-z2" />
       <extension name="coverage">
@@ -74,6 +77,22 @@
       <option name="PACKAGE_NAME" value="ba.unsa.etf.rpr.tutorijal02" />
       <option name="MAIN_CLASS_NAME" value="ba.unsa.etf.rpr.tutorijal02.IntervalTest" />
       <option name="METHOD_NAME" value="equals" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IntervalTest.intersect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rpr-t2-z2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ba.unsa.etf.rpr.tutorijal02.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ba.unsa.etf.rpr.tutorijal02" />
+      <option name="MAIN_CLASS_NAME" value="ba.unsa.etf.rpr.tutorijal02.IntervalTest" />
+      <option name="METHOD_NAME" value="intersect" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -113,10 +132,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.IntervalTest" />
+        <item itemvalue="JUnit.IntervalTest.intersect" />
         <item itemvalue="JUnit.IntervalTest.toString2" />
         <item itemvalue="JUnit.IntervalTest.intersect1" />
         <item itemvalue="JUnit.IntervalTest.equals" />
-        <item itemvalue="JUnit.IntervalTest" />
       </list>
     </recent_temporary>
   </component>
@@ -157,7 +177,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604342254127</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="ispravka metode tostring za slucaj kada su pocetna i krajnja 0 0">
+      <created>1604514321988</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1604514321988</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -170,11 +197,13 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Dodane neke funkcije" />
     <MESSAGE value="Prepravljena metoda tostring, prolaze jos 3 testa." />
-    <option name="LAST_COMMIT_MESSAGE" value="Prepravljena metoda tostring, prolaze jos 3 testa." />
+    <MESSAGE value="ispravka metode tostring za slucaj kada su pocetna i krajnja 0 0" />
+    <option name="LAST_COMMIT_MESSAGE" value="ispravka metode tostring za slucaj kada su pocetna i krajnja 0 0" />
   </component>
   <component name="WindowStateProjectService">
     <state x="249" y="0" key="#Project_Structure" timestamp="1604340442781">
@@ -193,22 +222,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="531" y="113" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1604341934173" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1604342370693">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1604516094755">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604342370693" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1604342370693">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604516094755" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1604516094755">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1604342370693" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1604342370693">
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1604516094755" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1604516094755">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1604342370693" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1604342370693">
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1604516094755" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1604516094755">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1604342370693" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1604516094755" />
     <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1604342256720">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -220,6 +249,9 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/rpr_t2_z2$IntervalTest.ic" NAME="IntervalTest Coverage Results" MODIFIED="1604342196508" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ba.unsa.etf.rpr.tutorijal02.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/rpr_t2_z2$IntervalTest_toString2.ic" NAME="IntervalTest.toString2 Coverage Results" MODIFIED="1604514251070" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>ba.unsa.etf.rpr.tutorijal02.*</FILTER>
     </SUITE>
   </component>
