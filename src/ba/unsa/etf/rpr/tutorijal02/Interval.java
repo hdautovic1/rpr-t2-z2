@@ -100,6 +100,7 @@ private  boolean pocetnaPripada,krajnjaPripada;
 
     @Override
     public String toString() {
+        if(pocetna==0 && krajnja==0)return "()";
         if(pocetnaPripada==true && krajnjaPripada==true)
         return "[" +pocetna+","+krajnja+"]";
         if(pocetnaPripada==false && krajnjaPripada==false)

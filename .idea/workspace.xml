@@ -19,9 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6416208e-ff63-435f-bea9-5e4ccc75ec4a" name="Default Changelist" comment="Dodane neke funkcije">
+    <list default="true" id="6416208e-ff63-435f-bea9-5e4ccc75ec4a" name="Default Changelist" comment="Prepravljena metoda tostring, prolaze jos 3 testa.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ba/unsa/etf/rpr/tutorijal02/Interval.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ba/unsa/etf/rpr/tutorijal02/Interval.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +47,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.IntervalTest.toString2">
     <configuration name="IntervalTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rpr-t2-z2" />
       <extension name="coverage">
@@ -64,8 +63,59 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="IntervalTest.equals" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rpr-t2-z2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ba.unsa.etf.rpr.tutorijal02.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ba.unsa.etf.rpr.tutorijal02" />
+      <option name="MAIN_CLASS_NAME" value="ba.unsa.etf.rpr.tutorijal02.IntervalTest" />
+      <option name="METHOD_NAME" value="equals" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IntervalTest.intersect1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rpr-t2-z2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ba.unsa.etf.rpr.tutorijal02.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ba.unsa.etf.rpr.tutorijal02" />
+      <option name="MAIN_CLASS_NAME" value="ba.unsa.etf.rpr.tutorijal02.IntervalTest" />
+      <option name="METHOD_NAME" value="intersect1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IntervalTest.toString2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rpr-t2-z2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ba.unsa.etf.rpr.tutorijal02.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ba.unsa.etf.rpr.tutorijal02" />
+      <option name="MAIN_CLASS_NAME" value="ba.unsa.etf.rpr.tutorijal02.IntervalTest" />
+      <option name="METHOD_NAME" value="toString2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.IntervalTest.toString2" />
+        <item itemvalue="JUnit.IntervalTest.intersect1" />
+        <item itemvalue="JUnit.IntervalTest.equals" />
         <item itemvalue="JUnit.IntervalTest" />
       </list>
     </recent_temporary>
@@ -100,7 +150,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604341797895</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Prepravljena metoda tostring, prolaze jos 3 testa.">
+      <created>1604342254127</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1604342254127</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -116,7 +173,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Dodane neke funkcije" />
-    <option name="LAST_COMMIT_MESSAGE" value="Dodane neke funkcije" />
+    <MESSAGE value="Prepravljena metoda tostring, prolaze jos 3 testa." />
+    <option name="LAST_COMMIT_MESSAGE" value="Prepravljena metoda tostring, prolaze jos 3 testa." />
   </component>
   <component name="WindowStateProjectService">
     <state x="249" y="0" key="#Project_Structure" timestamp="1604340442781">
@@ -127,33 +185,41 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1604340306373" />
+    <state x="93" y="93" width="1350" height="638" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1604342368032">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="93" y="93" width="1350" height="638" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1536.824@0.0.1536.824" timestamp="1604342368032" />
     <state x="531" y="113" key="#com.intellij.ide.util.MemberChooser" timestamp="1604341934173">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="531" y="113" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1604341934173" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1604342051363">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1604342370693">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604342051363" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1604342051362">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604342370693" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1604342370693">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1604342051362" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1604342051362">
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1604342370693" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1604342370693">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1604342051362" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1604342051363">
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1604342370693" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1604342370693">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1604342051363" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1604342370693" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1604342256720">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1604342256720" />
     <state x="498" y="304" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1604340329189">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="498" y="304" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1536.824@0.0.1536.824" timestamp="1604340329189" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/rpr_t2_z2$IntervalTest.ic" NAME="IntervalTest Coverage Results" MODIFIED="1604341851233" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/rpr_t2_z2$IntervalTest.ic" NAME="IntervalTest Coverage Results" MODIFIED="1604342196508" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>ba.unsa.etf.rpr.tutorijal02.*</FILTER>
     </SUITE>
   </component>
